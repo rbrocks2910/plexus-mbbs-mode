@@ -280,7 +280,7 @@ export const HomeScreen: React.FC = () => {
                       </div>
                     </div>
                     <div className={`text-[11px] mt-2 font-medium ${isSelected ? 'text-plexus-accent font-semibold' : 'text-white/50'}`}>
-                      {subject.diseases.length} High-Yield Diseases
+                      High-Yield Clinical Cases
                     </div>
                   </button>
                 );

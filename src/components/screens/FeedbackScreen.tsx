@@ -22,6 +22,7 @@ import { Card } from '../ui/Card';
 import { LoadingOverlay } from '../ui/LoadingOverlay';
 import { FEEDBACK_ANALYSIS_MESSAGES } from '../../constants/loadingMessages';
 import { useSRSStore } from '../../store/srsStore';
+import { FormattedModelAnswer } from '../ui/FormattedModelAnswer';
 
 // A visual component to display a percentage in a circular progress bar.
 // Used here to visually and immediately communicate the user's diagnostic accuracy.
@@ -54,22 +55,23 @@ const ProgressRing: React.FC<{ percentage: number }> = ({ percentage }) => {
 const AccordionItem: React.FC<{ title: string; children: React.ReactNode; icon: React.ReactNode }> = ({ title, children, icon }) => {
     const [isOpen, setIsOpen] = useState(true); // Default to open for better initial visibility of all feedback.
     return (
-        <Card className="!p-0">
+        <Card className="!p-0 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
             {/* The button controls the accordion's open/closed state. */}
-            <button onClick={() => setIsOpen(!isOpen)} className="flex justify-between items-center w-full p-4 text-left font-semibold text-plexus-blue text-lg">
+            <button onClick={() => setIsOpen(!isOpen)} className="flex justify-between items-center w-full p-4 text-left font-semibold text-plexus-blue text-lg hover:bg-slate-50 transition-colors">
                 <div className="flex items-center space-x-3">{icon}<span>{title}</span></div>
                 {/* The chevron icon rotates to indicate the current state. */}
-                <svg xmlns="http://www.w3.org/2000/svg" className={`h-5 w-5 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`} viewBox="0 0 20 20" fill="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" className={`h-5 w-5 transition-transform duration-300 ${isOpen ? 'rotate-180 text-plexus-blue' : 'text-gray-400'}`} viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd"/>
                 </svg>
             </button>
-            {/* The content's visibility is controlled by changing `max-h-screen` (visible) to `max-h-0` (hidden). */}
-            <div className={`overflow-hidden transition-all duration-500 ease-plexus-ease ${isOpen ? 'max-h-screen' : 'max-h-0'}`}>
-                <div className="p-4 border-t border-gray-200">{children}</div>
-            </div>
+            {isOpen && (
+                <div className="p-4 sm:p-6 border-t border-gray-200">
+                    {children}
+                </div>
+            )}
         </Card>
-    )
-}
+    );
+};
 
 export const FeedbackScreen: React.FC = () => {
   const { caseId } = useParams<{ caseId: string }>();
@@ -339,17 +341,16 @@ export const FeedbackScreen: React.FC = () => {
                                 </button>
                                 
                                 {expandedAnswer === index && (
-                                    <div className="mt-4 p-4 bg-white rounded-lg border border-plexus-blue/20 animate-fade-in">
-                                        <h5 className="font-semibold text-plexus-blue mb-2">Answer:</h5>
+                                    <div className="mt-4 p-4 sm:p-5 bg-white rounded-2xl border border-plexus-blue/20 shadow-sm animate-fade-in">
                                         {loadingAnswers[index] ? (
-                                            <div className="flex items-center gap-2 text-gray-600">
+                                            <div className="flex items-center justify-center gap-3 py-6 text-gray-600">
                                                 <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-plexus-blue"></div>
-                                                <span>Generating comprehensive answer...</span>
+                                                <span className="text-sm font-medium">Generating structured university model answer...</span>
                                             </div>
                                         ) : (
-                                            <p className="text-gray-700 leading-relaxed whitespace-pre-wrap">
-                                                {answers[index] || 'No answer available.'}
-                                            </p>
+                                            <div className="max-h-[60vh] overflow-y-auto pr-2 custom-scrollbar">
+                                                <FormattedModelAnswer content={answers[index] || ''} />
+                                            </div>
                                         )}
                                     </div>
                                 )}

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useSRSStore, SRSCard } from '../../store/srsStore';
+import { FormattedModelAnswer } from '../ui/FormattedModelAnswer';
 
 const MOTIVATIONS = [
   "You're crushing it! 🔥",
@@ -204,12 +205,12 @@ export const ReviewScreen: React.FC = () => {
               <motion.div
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
-                className="w-full text-left bg-black/30 border border-white/15 p-5 rounded-2xl text-white/90 text-sm leading-relaxed whitespace-pre-wrap mt-2 overflow-y-auto"
+                className="w-full text-left bg-black/40 border border-white/20 p-5 rounded-2xl text-white/90 text-sm leading-relaxed mt-2 max-h-[50vh] overflow-y-auto custom-scrollbar"
               >
-                <div className="text-xs font-bold uppercase text-emerald-300 mb-2 tracking-wider">
-                  Model High-Marks University Answer:
+                <div className="text-xs font-bold uppercase text-emerald-300 mb-2 tracking-wider flex items-center gap-1.5">
+                  <span>⭐ Verified Model University Answer:</span>
                 </div>
-                {currentCard.answer}
+                <FormattedModelAnswer content={currentCard.answer} variant="dark" />
               </motion.div>
             )}
           </motion.div>
