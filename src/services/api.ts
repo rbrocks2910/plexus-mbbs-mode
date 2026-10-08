@@ -15,7 +15,6 @@ import {
   SimulationOutcome,
 } from '../types';
 import { getDummyCase, getMbbsCase } from './dummyData';
-import { findFirstYearTopic } from '../data/firstYearExamBank';
 
 export const generatePatientCase = async (
   specialty: Specialty,
@@ -38,7 +37,7 @@ export const generatePatientCase = async (
   }
 
   if (mbbsMode && mbbsMode.enabled) {
-    return getMbbsCase(mbbsMode.subjectId, mbbsMode.subjectName);
+    return await getMbbsCase(mbbsMode.subjectId, mbbsMode.subjectName);
   }
   return getDummyCase(specialty, rarity);
 };
@@ -310,9 +309,14 @@ export const getExamAnswer = async (
   context: string,
   subject: string
 ): Promise<string> => {
-  const match = findFirstYearTopic(context) || findFirstYearTopic(question);
-  if (match && match.modelAnswer) {
-    return match.modelAnswer;
+  try {
+    const { findFirstYearTopic } = await import('../data/firstYearExamBank');
+    const match = findFirstYearTopic(context) || findFirstYearTopic(question);
+    if (match && match.modelAnswer) {
+      return match.modelAnswer;
+    }
+  } catch {
+    // Continue to API or fallback template
   }
 
   try {

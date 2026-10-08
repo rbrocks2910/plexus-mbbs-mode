@@ -4,16 +4,6 @@
  */
 
 import { getAllFMTConditions } from './fmtTopics';
-import { FIRST_YEAR_ANATOMY_TOPICS } from './firstYearAnatomy';
-import { FIRST_YEAR_PHYSIOLOGY_TOPICS } from './firstYearPhysiology';
-import { FIRST_YEAR_BIOCHEMISTRY_TOPICS } from './firstYearBiochemistry';
-
-import { SECOND_YEAR_PATHOLOGY_TOPICS } from './secondYearPathology';
-import { SECOND_YEAR_PHARMACOLOGY_TOPICS } from './secondYearPharmacology';
-import { SECOND_YEAR_MICROBIOLOGY_TOPICS } from './secondYearMicrobiology';
-import { THIRD_YEAR_PSM_TOPICS } from './thirdYearPSM';
-import { THIRD_YEAR_OPHTHALMOLOGY_TOPICS } from './thirdYearOphthalmology';
-import { THIRD_YEAR_ENT_TOPICS } from './thirdYearENT';
 
 export interface MBBSSubject {
   id: string;
@@ -24,52 +14,253 @@ export interface MBBSSubject {
 }
 
 // ----------------------------------------------------
-// YEAR 1 SUBJECTS (Pre-clinical - Authentic Clinical Diseases from 1st year.pdf)
+// YEAR 1 SUBJECTS (Pre-clinical)
 // ----------------------------------------------------
 
-export const ANATOMY_DISEASES: string[] = Array.from(new Set(
-  FIRST_YEAR_ANATOMY_TOPICS.map(t => t.clinicalDiagnosis.toLowerCase())
-));
+export const ANATOMY_DISEASES: string[] = [
+  "femoral hernia",
+  "carpal tunnel syndrome",
+  "varicose veins (great saphenous insufficiency)",
+  "facial nerve palsy (bell's palsy)",
+  "trigeminal neuralgia",
+  "pterion fracture with extradural hematoma",
+  "cavernous sinus thrombosis",
+  "submandibular sialolithiasis",
+  "parotid gland pleomorphic adenoma",
+  "thoracic outlet syndrome",
+  "scapular winging (long thoracic nerve injury)",
+  "radial nerve injury (wrist drop)",
+  "ulnar claw hand",
+  "median nerve injury (ape hand deformity)",
+  "common peroneal nerve injury (foot drop)",
+  "sciatica (l4-l5 / l5-s1 disc prolapse)",
+  "congenital diaphragmatic hernia (bochdalek)",
+  "patent ductus arteriosus (pda)",
+  "tetralogy of fallot",
+  "coarctation of aorta",
+  "tracheoesophageal fistula",
+  "meckel diverticulum",
+  "hirschsprung disease",
+  "congenital hypertrophic pyloric stenosis",
+  "inguinal hernia (indirect vs direct)",
+  "hydrocele of tunica vaginalis",
+  "varicocele (left pampiniform plexus)",
+  "cryptorchidism (undescended testis)"
+];
 
-export const PHYSIOLOGY_DISEASES: string[] = Array.from(new Set(
-  FIRST_YEAR_PHYSIOLOGY_TOPICS.map(t => t.clinicalDiagnosis.toLowerCase())
-));
+export const PHYSIOLOGY_DISEASES: string[] = [
+  "iron deficiency anemia",
+  "megaloblastic anemia (vitamin b12 deficiency)",
+  "sickle cell anemia with vaso-occlusive crisis",
+  "immune thrombocytopenic purpura (itp)",
+  "hemophilia a (factor viii deficiency)",
+  "von willebrand disease",
+  "disseminated intravascular coagulation (dic)",
+  "hypovolemic shock (hemorrhagic shock)",
+  "essential hypertension",
+  "orthostatic hypotension",
+  "complete heart block (third-degree av block)",
+  "atrial fibrillation",
+  "ventricular tachycardia",
+  "bronchial asthma (reversible airway obstruction)",
+  "chronic obstructive pulmonary disease (emphysema)",
+  "acute respiratory distress syndrome (ards)",
+  "high altitude pulmonary edema (hape)",
+  "decompression sickness (caisson disease)",
+  "syndrome of inappropriate adh (siadh)",
+  "central diabetes insipidus",
+  "nephrogenic diabetes insipidus",
+  "acute tubular necrosis",
+  "chronic kidney disease (stage 4)",
+  "renal tubular acidosis (type 1)",
+  "primary hyperaldosteronism (conn syndrome)",
+  "cushing syndrome (hypercortisolemia)",
+  "primary adrenal insufficiency (addison disease)",
+  "graves disease (hyperthyroidism)",
+  "hashimoto thyroiditis (hypothyroidism)",
+  "primary hyperparathyroidism",
+  "hypoparathyroidism with hypocalcemic tetany",
+  "type 1 diabetes mellitus with dka",
+  "type 2 diabetes mellitus",
+  "myasthenia gravis (anti-achr positive)",
+  "parkinson disease",
+  "tabes dorsalis (neurosyphilis)"
+];
 
-export const BIOCHEMISTRY_DISEASES: string[] = Array.from(new Set(
-  FIRST_YEAR_BIOCHEMISTRY_TOPICS.map(t => t.clinicalDiagnosis.toLowerCase())
-));
+export const BIOCHEMISTRY_DISEASES: string[] = [
+  "phenylketonuria (pku)",
+  "alkaptonuria (ochronosis)",
+  "maple syrup urine disease (msud)",
+  "homocystinuria (marfanoid habitus)",
+  "von gierke disease (glycogen storage disease type 1a)",
+  "pompe disease (gsd type 2)",
+  "mcardle disease (gsd type 5)",
+  "hereditary fructose intolerance",
+  "classic galactosemia (galt deficiency)",
+  "acute intermittent porphyria",
+  "porphyria cutanea tarda",
+  "gouty arthritis (hyperuricemia)",
+  "lesch-nyhan syndrome (hprt deficiency)",
+  "familial hypercholesterolemia (ldl-r defect)",
+  "tangier disease (hypoalphalipoproteinemia)",
+  "scurvy (vitamin c deficiency)",
+  "pellagra (niacin deficiency)",
+  "beriberi (thiamine deficiency)",
+  "wernicke-korsakoff syndrome",
+  "wilson disease (hepatolenticular degeneration)",
+  "hemochromatosis (iron overload)",
+  "glucose-6-phosphate dehydrogenase (g6pd) deficiency",
+  "diabetic ketoacidosis",
+  "lactic acidosis (metformin-associated)",
+  "hyperammonemia type 1 & 2"
+];
 
 // ----------------------------------------------------
-// YEAR 2 SUBJECTS (Para-clinical - VIP 2ND YEAR.pdf)
+// YEAR 2 SUBJECTS (Para-clinical)
 // ----------------------------------------------------
 
-export const PATHOLOGY_DISEASES: string[] = Array.from(new Set(
-  SECOND_YEAR_PATHOLOGY_TOPICS.map(t => t.clinicalDiagnosis.toLowerCase())
-));
+export const PATHOLOGY_DISEASES: string[] = [
+  "acute myocardial infarction with coagulation necrosis",
+  "caseous necrosis (pulmonary tuberculosis)",
+  "systemic amyloidosis (congo red positive)",
+  "fatty liver disease (steatohepatitis)",
+  "chronic active hepatitis b/c with cirrhosis",
+  "squamous cell carcinoma of oral cavity",
+  "adenocarcinoma of colon (adenoma-carcinoma sequence)",
+  "infiltrating ductal carcinoma of breast",
+  "chronic myeloid leukemia (philadelphia chromosome)",
+  "acute lymphoblastic leukemia (all)",
+  "acute myeloid leukemia (aml with auer rods)",
+  "hodgkin lymphoma (reed-sternberg cells)",
+  "non-hodgkin lymphoma (diffuse large b-cell)",
+  "multiple myeloma with lytic bone lesions",
+  "atherosclerosis with complicated plaque",
+  "polyarteritis nodosa (medium-vessel vasculitis)",
+  "granulomatosis with polyangiitis (wegener)",
+  "post-streptococcal glomerulonephritis (psgn)",
+  "nephrotic syndrome (membranous nephropathy)",
+  "crescentic glomerulonephritis (rpgn)",
+  "peptic ulcer disease with h. pylori gastritis",
+  "crohn disease (skip lesions & noncaseating granulomas)",
+  "ulcerative colitis with pseudopolyps",
+  "cervical intraepithelial neoplasia (hpv 16/18)",
+  "osteosarcoma with codman triangle"
+];
 
-export const PHARMACOLOGY_DISEASES: string[] = Array.from(new Set(
-  SECOND_YEAR_PHARMACOLOGY_TOPICS.map(t => t.clinicalDiagnosis.toLowerCase())
-));
+export const PHARMACOLOGY_DISEASES: string[] = [
+  "organophosphate insecticide poisoning",
+  "atropine toxicity (anticholinergic toxidrome)",
+  "paracetamol overdose (acetaminophen hepatotoxicity)",
+  "opioid overdose (heroin/morphine pin-point pupils)",
+  "digoxin toxicity with ventricular ectopics",
+  "lithium toxicity with ataxia and tremors",
+  "warfarin-induced major hemorrhage",
+  "heparin-induced thrombocytopenia (hit type 2)",
+  "methotrexate toxicity (bone marrow suppression)",
+  "aminoglycoside nephrotoxicity and ototoxicity",
+  "anti-tubercular drug-induced hepatitis (dih)",
+  "severe cutanous adverse reaction (stevens-johnson syndrome)",
+  "anaphylactic shock (beta-lactam hypersensitivity)",
+  "neuroleptic malignant syndrome (antipsychotic-induced)",
+  "serotonin syndrome (ssri/maoi interaction)"
+];
 
-export const MICROBIOLOGY_DISEASES: string[] = Array.from(new Set(
-  SECOND_YEAR_MICROBIOLOGY_TOPICS.map(t => t.clinicalDiagnosis.toLowerCase())
-));
+export const MICROBIOLOGY_DISEASES: string[] = [
+  "pulmonary tuberculosis (mycobacterium tuberculosis)",
+  "tuberculous meningitis (acid-fast bacilli in csf)",
+  "bacterial meningitis (neisseria meningitidis)",
+  "pneumococcal lobar pneumonia (streptococcus pneumoniae)",
+  "enteric fever (salmonella typhi bacteremia)",
+  "acute cholera with rice water diarrhea (vibrio cholerae)",
+  "tetanus with trismus & risus sardonicus (clostridium tetani)",
+  "gas gangrene (clostridium perfringens)",
+  "hospital-acquired mrsa bacteremia",
+  "dengue shock syndrome (flavi virus)",
+  "falciparum malaria with cerebral malaria",
+  "visceral leishmaniasis (kala-azar / l-d bodies)",
+  "rabies encephalitis (hydrophobia & aerophobia)",
+  "acute viral hepatitis e with fulminant failure in pregnancy",
+  "scrub typhus (orientia tsutsugamushi with eschar)",
+  "leptospirosis (weil disease with jaundice & oliguria)",
+  "invasive pulmonary aspergillosis",
+  "mucormycosis (rhino-orbito-cerebral zygomycosis)",
+  "cryptococcal meningitis in advanced hiv"
+];
 
 // ----------------------------------------------------
-// YEAR 3 SUBJECTS (Pre-final - VIP 3rd year (2)-1.pdf)
+// YEAR 3 SUBJECTS (Pre-final)
 // ----------------------------------------------------
 
-export const PSM_DISEASES: string[] = Array.from(new Set(
-  THIRD_YEAR_PSM_TOPICS.map(t => t.clinicalDiagnosis.toLowerCase())
-));
+export const PSM_DISEASES: string[] = [
+  "tuberculosis",
+  "poliomyelitis",
+  "leprosy",
+  "hiv",
+  "influenza",
+  "dengue",
+  "cholera",
+  "rabies",
+  "lymphatic filariasis",
+  "japanese encephalitis",
+  "typhoid",
+  "leishmaniasis (kala azar)",
+  "malaria",
+  "measles",
+  "tetanus",
+  "diphtheria",
+  "hepatitis b",
+  "rheumatic heart disease",
+  "diabetes mellitus",
+  "hypertension",
+  "coronary heart disease",
+  "protein energy malnutrition (pem)",
+  "nutritional anemia",
+  "vitamin a deficiency (xerophthalmia)",
+  "iodine deficiency disorders",
+  "silicosis",
+  "anthracosis",
+  "asbestosis",
+  "fluorosis",
+  "lathyrism"
+];
 
-export const OPHTHALMOLOGY_DISEASES: string[] = Array.from(new Set(
-  THIRD_YEAR_OPHTHALMOLOGY_TOPICS.map(t => t.clinicalDiagnosis.toLowerCase())
-));
+export const OPHTHALMOLOGY_DISEASES: string[] = [
+  "acute angle-closure glaucoma",
+  "primary open-angle glaucoma",
+  "senile mature cataract",
+  "bacterial corneal ulcer (hypopyon ulcer)",
+  "fungal keratitis with feathery margins",
+  "acute anterior uveitis (iridocyclitis)",
+  "central retinal artery occlusion (crao / cherry-red spot)",
+  "central retinal vein occlusion (crvo / blood and thunder)",
+  "rhegmatogenous retinal detachment",
+  "proliferative diabetic retinopathy with vitreous hemorrhage",
+  "hypertensive retinopathy grade 4 (with papilledema)",
+  "sympathetic ophthalmitis",
+  "orbital cellulitis with proptosis",
+  "trachoma stage 3 (cicatricial with trichiasis)"
+];
 
-export const ENT_DISEASES: string[] = Array.from(new Set(
-  THIRD_YEAR_ENT_TOPICS.map(t => t.clinicalDiagnosis.toLowerCase())
-));
+export const ENT_DISEASES: string[] = [
+  "acute suppurative otitis media (asom)",
+  "chronic suppurative otitis media (csom - safe/tubotympanic)",
+  "chronic suppurative otitis media (csom - unsafe/cholesteatoma)",
+  "acute mastoiditis with retroauricular swelling",
+  "benign paroxysmal positional vertigo (bppv)",
+  "meniere disease (endolymphatic hydrops)",
+  "vestibular schwannoma (acoustic neuroma)",
+  "deviated nasal septum (dns) with spur",
+  "acute maxillary sinusitis",
+  "ethmoidal nasal polyposis",
+  "antral choanal polyp",
+  "juvenile nasopharyngeal angiofibroma (jna)",
+  "peritonsillar abscess (quinsy)",
+  "retropharyngeal abscess",
+  "ludwig angina (bilateral submandibular space cellulitis)",
+  "vocal cord polyp (singer's nodule)",
+  "carcinoma larynx (glottic vs supraglottic)",
+  "foreign body bronchus with stridor"
+];
 
 // ----------------------------------------------------
 // YEAR 4 SUBJECTS (Final Year / Clinical)

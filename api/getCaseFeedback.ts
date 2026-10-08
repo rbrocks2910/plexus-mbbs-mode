@@ -171,7 +171,7 @@ Format as JSON with array of questions, each having only a 'question' field.`;
                 result.universityExamQuestions = (examData.questions || []).map((q: { question: string }) => ({
                     question: q.question,
                     context: topicContext || 'Unknown',
-                    subject: medicalCase.mbbsMode.subjectId
+                    subject: medicalCase.mbbsMode?.subjectId || (isFMT ? 'fmt' : 'psm')
                 }));
                 
                 console.log(`[${isFMT ? 'FMT' : 'PSM'} Exam Questions Generated] Context: ${topicContext}, Questions: ${result.universityExamQuestions.length}`);

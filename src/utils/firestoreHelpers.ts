@@ -20,7 +20,10 @@ export const convertTimestampToDate = (value: AnyTimestamp | undefined | null): 
   if (typeof value === 'object' && 'seconds' in value) {
     return new Date((value as any).seconds * 1000);
   }
-  return value;
+  if (typeof value === 'string') {
+    return value;
+  }
+  return null;
 };
 
 /**

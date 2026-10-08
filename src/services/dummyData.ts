@@ -8,7 +8,6 @@
 
 import { Specialty, CaseRarity, MedicalCase, RaritySelection } from '../types';
 import { getDiseasesForSubject } from '../data/mbbsSubjects';
-import { getTopicsForMbbsSubject } from '../data/firstYearExamBank';
 
 // Predefined pools of patient profiles to add variety to dummy cases.
 export const DUMMY_PROFILES_MALE = [
@@ -342,11 +341,17 @@ export const MBBS_CASES: Record<string, Array<{
 /**
  * Generates an MBBS-specific dummy MedicalCase object.
  */
-export const getMbbsCase = (subjectId: string, subjectName: string): MedicalCase => {
+export const getMbbsCase = async (subjectId: string, subjectName: string): Promise<MedicalCase> => {
   const normalizedId = subjectId.toLowerCase();
 
-  // Check if this subject exists in the comprehensive MBBS question bank (Year 1, Year 2, Year 3)
-  const mbbsTopics = getTopicsForMbbsSubject(normalizedId);
+  // Lazy-load question bank only if offline fallback is required
+  let mbbsTopics: any[] = [];
+  try {
+    const { getTopicsForMbbsSubject } = await import('../data/firstYearExamBank');
+    mbbsTopics = getTopicsForMbbsSubject(normalizedId);
+  } catch {
+    mbbsTopics = [];
+  }
   if (mbbsTopics && mbbsTopics.length > 0) {
     const chosen = mbbsTopics[Math.floor(Math.random() * mbbsTopics.length)];
     const isMale = chosen.gender === 'Male';

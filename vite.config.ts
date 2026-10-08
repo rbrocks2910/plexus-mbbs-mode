@@ -89,22 +89,29 @@ function apiDevServerPlugin(): Plugin {
 export default defineConfig(({ mode }) => {
   // Load environment variables from .env into process.env for API handlers
   const env = loadEnv(mode, process.cwd(), '');
+  delete env.NODE_ENV;
   Object.assign(process.env, env);
 
+  // Guarantee production mode for builds so React uses production jsx runtime
+  process.env.NODE_ENV = mode === 'production' ? 'production' : (process.env.NODE_ENV || mode);
+
   return {
-    plugins: [react(), apiDevServerPlugin()],
+    plugins: [
+      react({
+        jsxRuntime: 'automatic',
+        babel: {
+          plugins: []
+        }
+      }),
+      apiDevServerPlugin()
+    ],
     define: {
-      'process.env.NODE_ENV': JSON.stringify(mode),
+      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
     },
     build: {
-      rollupOptions: {
-        output: {
-          manualChunks: {
-            'react-vendor': ['react', 'react-dom'],
-            'router-vendor': ['react-router-dom'],
-          }
-        }
-      }
+      target: 'esnext',
+      sourcemap: false,
+      chunkSizeWarningLimit: 3000
     }
   };
 });

@@ -427,7 +427,7 @@ export function getFirstYearTopicByName(query: string): MasterTopicItem | undefi
   const q = query.toLowerCase();
   return ANATOMY_MASTER_TOPICS.find(t => 
     t.name.toLowerCase().includes(q) || 
-    t.topic.toLowerCase().includes(q) ||
+    t.subdivision.toLowerCase().includes(q) ||
     t.clinicalDiagnosis.toLowerCase().includes(q)
   );
 }

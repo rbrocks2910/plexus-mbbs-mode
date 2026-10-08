@@ -17,7 +17,7 @@ import { generatePatientCase } from '../services/api';
 import { saveAppState, loadAppState } from '../utils/storage';
 
 // Defines the shape of our global application state.
-interface AppState {
+export interface AppState {
   cases: MedicalCase[]; // An array to store all medical cases generated during the user's session.
   userProgress: UserProgress; // An object for tracking user statistics (currently just completed cases).
   isLoading: boolean; // A global flag to indicate when a background process (like case generation) is running. Used to show/hide the LoadingOverlay.
