@@ -1,0 +1,407 @@
+/**
+ * Training Montage Specific Styles
+ * Theme: Dark, gritty, motivational, gym-like
+ */
+
+:root {
+  --training-bg: #1a1a1a;
+  --training-surface: #2d2d2d;
+  --training-primary: #ff6b35;
+  --training-secondary: #f7931e;
+  --training-accent: #ffd23f;
+  --training-text: #ffffff;
+  --training-text-dim: #b0b0b0;
+  --training-success: #4ade80;
+}
+
+body {
+  background: var(--training-bg);
+  color: var(--training-text);
+  min-height: 100vh;
+}
+
+/* Homescreen Styles */
+.training-hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.training-hero-title {
+  font-size: 4rem;
+  font-weight: 900;
+  background: linear-gradient(135deg, var(--training-primary), var(--training-accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.training-subtitle {
+  font-size: 1.5rem;
+  color: var(--training-text-dim);
+  margin-bottom: 3rem;
+  font-weight: 300;
+}
+
+.progress-bar-container {
+  background: var(--training-surface);
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  border: 2px solid var(--training-primary);
+}
+
+.level-indicator {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.level-badge {
+  background: linear-gradient(135deg, var(--training-primary), var(--training-secondary));
+  padding: 0.5rem 1.5rem;
+  border-radius: 2rem;
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--training-primary), var(--training-accent));
+  transition: width 0.5s ease;
+  box-shadow: 0 0 20px rgba(255, 107, 53, 0.5);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.stat-card {
+  background: var(--training-surface);
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.stat-value {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--training-primary);
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 0.875rem;
+  color: var(--training-text-dim);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.streak-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 107, 53, 0.2);
+  padding: 0.75rem 1.5rem;
+  border-radius: 2rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 2rem 0;
+}
+
+.enter-arena-button {
+  background: linear-gradient(135deg, var(--training-primary), var(--training-secondary));
+  color: white;
+  font-size: 1.5rem;
+  padding: 1.25rem 3rem;
+  border-radius: 0.75rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow: 0 8px 24px rgba(255, 107, 53, 0.4);
+  transition: all 0.3s ease;
+  margin-top: 3rem;
+}
+
+.enter-arena-button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(255, 107, 53, 0.6);
+}
+
+/* Case Screen */
+.training-case-container {
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.training-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: var(--training-surface);
+  border-radius: 1rem;
+}
+
+.case-number {
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--training-accent);
+}
+
+.timer {
+  font-size: 1.5rem;
+  font-family: 'Courier New', monospace;
+  color: var(--training-primary);
+}
+
+.reps-counter {
+  background: rgba(255, 107, 53, 0.2);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+}
+
+.training-patient-card {
+  background: var(--training-surface);
+  border-radius: 1rem;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.micro-feedback {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(74, 222, 128, 0.2);
+  color: var(--training-success);
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  animation: popIn 0.3s ease;
+}
+
+@keyframes popIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.action-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.training-action-button {
+  background: var(--training-surface);
+  color: var(--training-text);
+  padding: 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0.75rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.training-action-button:hover {
+  border-color: var(--training-primary);
+  background: rgba(255, 107, 53, 0.1);
+  transform: translateY(-2px);
+}
+
+.training-action-button.used {
+  opacity: 0.5;
+  border-color: var(--training-success);
+}
+
+.chat-container {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.training-message {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 0.75rem;
+}
+
+.training-message.user {
+  background: rgba(255, 107, 53, 0.2);
+  border-left: 3px solid var(--training-primary);
+}
+
+.training-message.response {
+  background: rgba(255, 255, 255, 0.05);
+  border-left: 3px solid var(--training-text-dim);
+}
+
+.submit-rep-button {
+  background: linear-gradient(135deg, var(--training-primary), var(--training-secondary));
+  color: white;
+  font-size: 1.25rem;
+  padding: 1rem 2rem;
+  border-radius: 0.75rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  width: 100%;
+  margin-top: 2rem;
+  text-transform: uppercase;
+}
+
+/* Feedback Screen */
+.training-feedback-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+.rep-complete-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.rep-number {
+  font-size: 3rem;
+  font-weight: 900;
+  background: linear-gradient(135deg, var(--training-primary), var(--training-accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1rem;
+}
+
+.form-check-section {
+  background: var(--training-surface);
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  border-left: 4px solid var(--training-primary);
+}
+
+.form-check-title {
+  font-size: 1.5rem;
+  color: var(--training-accent);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.strength-item {
+  background: rgba(74, 222, 128, 0.1);
+  border-left: 3px solid var(--training-success);
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  border-radius: 0.5rem;
+}
+
+.drill-item {
+  background: rgba(255, 210, 63, 0.1);
+  border-left: 3px solid var(--training-accent);
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  border-radius: 0.5rem;
+}
+
+.progress-metric {
+  background: linear-gradient(135deg, rgba(255, 107, 53, 0.2), rgba(255, 210, 63, 0.2));
+  padding: 1.5rem;
+  border-radius: 1rem;
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.rep-counter-big {
+  font-size: 4rem;
+  font-weight: 900;
+  color: var(--training-primary);
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.continue-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.rest-button {
+  flex: 1;
+  background: var(--training-surface);
+  color: var(--training-text);
+  padding: 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.go-again-button {
+  flex: 2;
+  background: linear-gradient(135deg, var(--training-primary), var(--training-secondary));
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.75rem;
+  font-weight: 700;
+  font-size: 1.125rem;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .training-hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .stat-value {
+    font-size: 2rem;
+  }
+}

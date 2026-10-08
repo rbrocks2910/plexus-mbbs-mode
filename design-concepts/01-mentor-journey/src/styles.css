@@ -1,0 +1,418 @@
+/**
+ * Mentor Journey Specific Styles
+ * Theme: Calm, professional, guidance-focused
+ */
+
+:root {
+  --mentor-primary: #4a7c9e;
+  --mentor-secondary: #6ba3c9;
+  --mentor-accent: #e8f4f8;
+  --mentor-text: #2c3e50;
+  --mentor-light: #f5f9fb;
+  --mentor-success: #52c41a;
+  --mentor-warning: #faad14;
+}
+
+body {
+  background: linear-gradient(135deg, var(--mentor-light) 0%, var(--mentor-accent) 100%);
+  color: var(--mentor-text);
+  min-height: 100vh;
+}
+
+/* Homescreen Styles */
+.hero-section {
+  text-align: center;
+  padding: 4rem 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  font-size: 3rem;
+  color: var(--mentor-primary);
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: var(--mentor-text);
+  opacity: 0.8;
+  margin-bottom: 2rem;
+}
+
+.progress-indicator {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+}
+
+.progress-text {
+  font-size: 1.125rem;
+  color: var(--mentor-primary);
+  font-weight: 600;
+}
+
+.cta-button {
+  background: var(--mentor-primary);
+  color: white;
+  font-size: 1.25rem;
+  padding: 1rem 2.5rem;
+  border-radius: 3rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  box-shadow: 0 4px 16px rgba(74, 124, 158, 0.3);
+}
+
+.cta-button:hover {
+  background: var(--mentor-secondary);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(74, 124, 158, 0.4);
+}
+
+/* Case Screen Layout */
+.case-container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.patient-section {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+  background: var(--mentor-light);
+}
+
+.mentor-section {
+  width: 400px;
+  background: white;
+  border-left: 3px solid var(--mentor-primary);
+  padding: 2rem;
+  overflow-y: auto;
+  box-shadow: -4px 0 16px rgba(0, 0, 0, 0.08);
+}
+
+.patient-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.patient-info {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid var(--mentor-accent);
+}
+
+.info-item {
+  flex: 1;
+}
+
+.info-label {
+  font-size: 0.875rem;
+  color: var(--mentor-text);
+  opacity: 0.7;
+  margin-bottom: 0.25rem;
+}
+
+.info-value {
+  font-size: 1.125rem;
+  color: var(--mentor-primary);
+  font-weight: 600;
+}
+
+.chief-complaint {
+  font-size: 1.25rem;
+  color: var(--mentor-text);
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+/* Interaction Area */
+.interaction-area {
+  margin-top: 2rem;
+}
+
+.question-prompts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.prompt-button {
+  background: var(--mentor-accent);
+  color: var(--mentor-primary);
+  padding: 0.75rem 1.25rem;
+  border-radius: 2rem;
+  border: 2px solid var(--mentor-secondary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+.prompt-button:hover {
+  background: var(--mentor-secondary);
+  color: white;
+  transform: translateY(-1px);
+}
+
+.prompt-button.active {
+  background: var(--mentor-primary);
+  color: white;
+  border-color: var(--mentor-primary);
+}
+
+/* Chat History */
+.chat-history {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.chat-message {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 0.75rem;
+}
+
+.chat-message.user {
+  background: var(--mentor-accent);
+  margin-left: 2rem;
+}
+
+.chat-message.patient {
+  background: #f0f0f0;
+  margin-right: 2rem;
+}
+
+.message-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  opacity: 0.8;
+}
+
+.message-text {
+  line-height: 1.6;
+}
+
+/* Mentor Sidebar */
+.mentor-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--mentor-primary), var(--mentor-secondary));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  box-shadow: 0 4px 16px rgba(74, 124, 158, 0.3);
+}
+
+.mentor-title {
+  text-align: center;
+  color: var(--mentor-primary);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.mentor-comment {
+  background: var(--mentor-accent);
+  border-left: 4px solid var(--mentor-primary);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.comment-icon {
+  display: inline-block;
+  margin-right: 0.5rem;
+  font-size: 1.25rem;
+}
+
+/* Action Buttons */
+.action-button {
+  background: var(--mentor-primary);
+  color: white;
+  padding: 0.875rem 1.75rem;
+  border-radius: 0.75rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.action-button:hover {
+  background: var(--mentor-secondary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(74, 124, 158, 0.3);
+}
+
+.action-button.secondary {
+  background: white;
+  color: var(--mentor-primary);
+  border: 2px solid var(--mentor-primary);
+}
+
+.action-button.secondary:hover {
+  background: var(--mentor-accent);
+}
+
+/* Feedback Screen */
+.feedback-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+.feedback-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.feedback-title {
+  font-size: 2.5rem;
+  color: var(--mentor-primary);
+  margin-bottom: 1rem;
+}
+
+.diagnosis-result {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+}
+
+.feedback-section {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  color: var(--mentor-primary);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.learning-list {
+  list-style: none;
+  padding: 0;
+}
+
+.learning-item {
+  padding: 0.75rem;
+  margin-bottom: 0.75rem;
+  border-left: 3px solid var(--mentor-success);
+  background: #f6ffed;
+  border-radius: 0.5rem;
+}
+
+.improvement-item {
+  padding: 0.75rem;
+  margin-bottom: 0.75rem;
+  border-left: 3px solid var(--mentor-warning);
+  background: #fffbe6;
+  border-radius: 0.5rem;
+}
+
+.key-takeaway {
+  background: linear-gradient(135deg, var(--mentor-accent), white);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: 2px solid var(--mentor-secondary);
+  font-size: 1.125rem;
+  line-height: 1.8;
+  margin-top: 1.5rem;
+}
+
+.exam-question {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  border: 2px solid var(--mentor-accent);
+  margin-bottom: 1.5rem;
+}
+
+.question-text {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--mentor-text);
+}
+
+.reveal-button {
+  background: var(--mentor-secondary);
+  color: white;
+  padding: 0.625rem 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.reveal-button:hover {
+  background: var(--mentor-primary);
+}
+
+.answer-text {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: var(--mentor-accent);
+  border-radius: 0.5rem;
+  line-height: 1.8;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .case-container {
+    flex-direction: column;
+  }
+  
+  .mentor-section {
+    width: 100%;
+    border-left: none;
+    border-top: 3px solid var(--mentor-primary);
+  }
+  
+  .hero-title {
+    font-size: 2rem;
+  }
+}

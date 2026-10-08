@@ -1,0 +1,496 @@
+/**
+ * Detective Story Specific Styles
+ * Theme: Moody, mysterious, Sherlock Holmes aesthetic
+ */
+
+:root {
+  --detective-bg: #1a1614;
+  --detective-surface: #2d2620;
+  --detective-primary: #c9a962;
+  --detective-secondary: #8b7355;
+  --detective-accent: #3d3530;
+  --detective-text: #e8e6e3;
+  --detective-text-dim: #a39f9a;
+  --detective-mystery: #6b4423;
+  --detective-clue: #d4af37;
+}
+
+body {
+  background: var(--detective-bg);
+  color: var(--detective-text);
+  min-height: 100vh;
+  background-image: 
+    radial-gradient(circle at 20% 50%, rgba(201, 169, 98, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(61, 53, 48, 0.05) 0%, transparent 50%);
+}
+
+/* Homescreen Styles */
+.detective-hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.detective-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--detective-primary);
+  margin-bottom: 1.5rem;
+  font-family: Georgia, serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.detective-subtitle {
+  font-size: 1.5rem;
+  color: var(--detective-text-dim);
+  margin-bottom: 3rem;
+  font-style: italic;
+}
+
+.case-file-counter {
+  background: var(--detective-surface);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+  border: 2px solid var(--detective-primary);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.counter-label {
+  font-size: 1rem;
+  color: var(--detective-text-dim);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+}
+
+.counter-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--detective-primary);
+}
+
+.solved-unsolved {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.solved-box, .unsolved-box {
+  flex: 1;
+  padding: 1.5rem;
+  background: rgba(201, 169, 98, 0.1);
+  border-radius: 0.5rem;
+  border: 1px solid var(--detective-secondary);
+}
+
+.open-case-button {
+  background: linear-gradient(135deg, var(--detective-primary), var(--detective-secondary));
+  color: var(--detective-bg);
+  font-size: 1.5rem;
+  padding: 1.25rem 3rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  box-shadow: 0 8px 24px rgba(201, 169, 98, 0.4);
+  transition: all 0.3s ease;
+  margin-top: 3rem;
+  font-family: Georgia, serif;
+}
+
+.open-case-button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(201, 169, 98, 0.6);
+}
+
+/* Case Screen */
+.detective-case-container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.case-file-section {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+  background: linear-gradient(135deg, #1a1614 0%, #2d2620 100%);
+}
+
+.watson-section {
+  width: 380px;
+  background: var(--detective-surface);
+  border-left: 3px solid var(--detective-primary);
+  padding: 2rem;
+  overflow-y: auto;
+  box-shadow: -8px 0 24px rgba(0, 0, 0, 0.4);
+}
+
+.case-file-header {
+  background: var(--detective-surface);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+  border: 2px solid var(--detective-primary);
+}
+
+.case-number-badge {
+  display: inline-block;
+  background: var(--detective-primary);
+  color: var(--detective-bg);
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.25rem;
+  font-weight: 700;
+  font-family: 'Courier New', monospace;
+  margin-bottom: 1rem;
+}
+
+.subject-details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--detective-secondary);
+}
+
+.detail-item {
+  font-family: 'Courier New', monospace;
+}
+
+.detail-label {
+  font-size: 0.75rem;
+  color: var(--detective-text-dim);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.25rem;
+}
+
+.detail-value {
+  font-size: 1rem;
+  color: var(--detective-primary);
+  font-weight: 600;
+}
+
+/* Investigation Tools */
+.investigation-tools {
+  background: var(--detective-accent);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.tool-label {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--detective-primary);
+  margin-bottom: 1rem;
+  font-family: Georgia, serif;
+}
+
+.tool-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+}
+
+.tool-button {
+  background: var(--detective-surface);
+  color: var(--detective-text);
+  padding: 0.875rem 1rem;
+  border: 1px solid var(--detective-secondary);
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  font-size: 0.9rem;
+}
+
+.tool-button:hover {
+  background: var(--detective-mystery);
+  border-color: var(--detective-primary);
+}
+
+.tool-button.used {
+  background: rgba(201, 169, 98, 0.2);
+  border-color: var(--detective-clue);
+}
+
+/* Clues Gathered */
+.clues-sidebar {
+  background: rgba(201, 169, 98, 0.05);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--detective-secondary);
+  margin-top: 1.5rem;
+}
+
+.clue-item {
+  padding: 0.75rem;
+  background: var(--detective-accent);
+  border-left: 3px solid var(--detective-clue);
+  border-radius: 0.25rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* Evidence Log */
+.evidence-log {
+  background: var(--detective-surface);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.evidence-entry {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--detective-accent);
+}
+
+.evidence-entry:last-child {
+  border-bottom: none;
+}
+
+.entry-type {
+  color: var(--detective-primary);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.entry-content {
+  color: var(--detective-text-dim);
+  line-height: 1.8;
+}
+
+/* Watson Avatar */
+.watson-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--detective-mystery), var(--detective-secondary));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  color: var(--detective-text);
+  font-size: 3rem;
+  border: 3px solid var(--detective-primary);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.watson-title {
+  text-align: center;
+  color: var(--detective-primary);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  font-family: Georgia, serif;
+}
+
+.watson-comment {
+  background: rgba(201, 169, 98, 0.1);
+  border-left: 3px solid var(--detective-primary);
+  padding: 1rem;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+  font-style: italic;
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Deduction Phase */
+.deduction-area {
+  background: var(--detective-surface);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  border: 2px solid var(--detective-primary);
+}
+
+.deduction-title {
+  font-size: 1.5rem;
+  color: var(--detective-primary);
+  margin-bottom: 1rem;
+  font-family: Georgia, serif;
+}
+
+.deduction-input {
+  width: 100%;
+  min-height: 150px;
+  padding: 1rem;
+  background: var(--detective-accent);
+  color: var(--detective-text);
+  border: 1px solid var(--detective-secondary);
+  border-radius: 0.25rem;
+  font-family: 'Courier New', monospace;
+  font-size: 0.95rem;
+}
+
+.present-deduction-button {
+  background: linear-gradient(135deg, var(--detective-primary), var(--detective-secondary));
+  color: var(--detective-bg);
+  padding: 1rem 2rem;
+  border-radius: 0.25rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.125rem;
+  width: 100%;
+  margin-top: 1rem;
+  font-family: Georgia, serif;
+}
+
+/* Feedback Screen */
+.detective-feedback-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+.case-solved-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 3rem;
+  background: var(--detective-surface);
+  border-radius: 0.5rem;
+  border: 2px solid var(--detective-primary);
+}
+
+.case-solved-title {
+  font-size: 3rem;
+  color: var(--detective-primary);
+  font-family: Georgia, serif;
+  margin-bottom: 1rem;
+}
+
+.solution-box {
+  background: rgba(201, 169, 98, 0.1);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  border: 2px solid var(--detective-clue);
+  margin-top: 1.5rem;
+}
+
+.deductions-section {
+  background: var(--detective-surface);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+  border-left: 4px solid var(--detective-primary);
+}
+
+.section-header {
+  font-size: 1.5rem;
+  color: var(--detective-primary);
+  margin-bottom: 1.5rem;
+  font-family: Georgia, serif;
+}
+
+.deduction-correct {
+  background: rgba(74, 222, 128, 0.1);
+  border-left: 3px solid #4ade80;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  border-radius: 0.25rem;
+}
+
+.deduction-missed {
+  background: rgba(251, 191, 36, 0.1);
+  border-left: 3px solid #fbbf24;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  border-radius: 0.25rem;
+}
+
+.scotland-yard-section {
+  background: var(--detective-surface);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+  border: 2px solid var(--detective-mystery);
+}
+
+.exam-question-box {
+  background: var(--detective-accent);
+  padding: 1.5rem;
+  border-radius: 0.25rem;
+  margin-bottom: 1.5rem;
+  font-family: 'Courier New', monospace;
+}
+
+.reveal-answer-button {
+  background: var(--detective-primary);
+  color: var(--detective-bg);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.reveal-answer-button:hover {
+  background: var(--detective-clue);
+}
+
+.answer-reveal {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: rgba(201, 169, 98, 0.1);
+  border-left: 3px solid var(--detective-clue);
+  border-radius: 0.25rem;
+  line-height: 1.8;
+}
+
+.close-case-button {
+  background: linear-gradient(135deg, var(--detective-primary), var(--detective-secondary));
+  color: var(--detective-bg);
+  padding: 1.25rem 3rem;
+  border-radius: 0.25rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.25rem;
+  width: 100%;
+  margin-top: 2rem;
+  font-family: Georgia, serif;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .detective-case-container {
+    flex-direction: column;
+  }
+  
+  .watson-section {
+    width: 100%;
+    border-left: none;
+    border-top: 3px solid var(--detective-primary);
+  }
+  
+  .detective-title {
+    font-size: 2.5rem;
+  }
+}

@@ -1,0 +1,529 @@
+/**
+ * Learning Mirror Specific Styles
+ * Theme: Clean, modern, educational, split-screen with live annotations
+ */
+
+:root {
+  --mirror-bg: #f5f7fa;
+  --mirror-surface: #ffffff;
+  --mirror-primary: #2563eb;
+  --mirror-secondary: #3b82f6;
+  --mirror-accent: #dbeafe;
+  --mirror-text: #1e293b;
+  --mirror-text-dim: #64748b;
+  --mirror-learning: #10b981;
+  --mirror-skill: #8b5cf6;
+}
+
+body {
+  background: var(--mirror-bg);
+  color: var(--mirror-text);
+  min-height: 100vh;
+}
+
+/* Homescreen Styles */
+.mirror-hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mirror-hero-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--mirror-primary);
+  margin-bottom: 1rem;
+}
+
+.mirror-subtitle {
+  font-size: 1.5rem;
+  color: var(--mirror-text-dim);
+  margin-bottom: 3rem;
+}
+
+.dual-pane-preview {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  background: var(--mirror-surface);
+  padding: 3rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  margin-bottom: 3rem;
+}
+
+.preview-pane {
+  text-align: left;
+}
+
+.pane-label {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--mirror-primary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.pane-content {
+  color: var(--mirror-text-dim);
+  line-height: 1.8;
+}
+
+.neural-progress {
+  background: var(--mirror-surface);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  margin-bottom: 3rem;
+}
+
+.progress-label {
+  font-size: 1rem;
+  color: var(--mirror-text-dim);
+  margin-bottom: 0.75rem;
+}
+
+.progress-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--mirror-primary);
+}
+
+.start-learning-button {
+  background: linear-gradient(135deg, var(--mirror-primary), var(--mirror-secondary));
+  color: white;
+  font-size: 1.5rem;
+  padding: 1.25rem 3rem;
+  border-radius: 0.75rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  box-shadow: 0 8px 24px rgba(37, 99, 235, 0.3);
+  transition: all 0.3s ease;
+}
+
+.start-learning-button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(37, 99, 235, 0.4);
+}
+
+/* Case Screen - Split View */
+.mirror-case-container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.patient-pane {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+  background: var(--mirror-surface);
+  border-right: 2px solid var(--mirror-accent);
+}
+
+.learning-pane {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+  background: linear-gradient(135deg, var(--mirror-accent) 0%, #f0f9ff 100%);
+}
+
+.pane-header {
+  position: sticky;
+  top: 0;
+  background: inherit;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid var(--mirror-primary);
+  z-index: 10;
+}
+
+.pane-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--mirror-primary);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* Patient Card */
+.mirror-patient-card {
+  background: var(--mirror-surface);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  margin-bottom: 1.5rem;
+}
+
+.patient-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid var(--mirror-accent);
+}
+
+.patient-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--mirror-text);
+}
+
+.patient-meta {
+  font-size: 0.95rem;
+  color: var(--mirror-text-dim);
+  margin-top: 0.25rem;
+}
+
+.chief-complaint-text {
+  font-size: 1.125rem;
+  color: var(--mirror-primary);
+  font-weight: 600;
+}
+
+/* Action Buttons */
+.action-group {
+  margin-bottom: 2rem;
+}
+
+.action-group-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--mirror-text);
+  margin-bottom: 1rem;
+}
+
+.action-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+}
+
+.mirror-action-button {
+  background: var(--mirror-surface);
+  color: var(--mirror-text);
+  padding: 1rem;
+  border: 2px solid var(--mirror-accent);
+  border-radius: 0.75rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.mirror-action-button:hover {
+  border-color: var(--mirror-primary);
+  background: var(--mirror-accent);
+  transform: translateY(-2px);
+}
+
+.mirror-action-button.used {
+  background: var(--mirror-accent);
+  border-color: var(--mirror-learning);
+}
+
+/* Response Display */
+.response-box {
+  background: var(--mirror-accent);
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  margin-bottom: 1.5rem;
+  border-left: 4px solid var(--mirror-primary);
+}
+
+.response-label {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--mirror-primary);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.response-text {
+  line-height: 1.8;
+  color: var(--mirror-text);
+}
+
+/* Learning Mirror Annotations */
+.mirror-annotation {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid var(--mirror-learning);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  animation: slideInRight 0.4s ease;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.annotation-icon {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: var(--mirror-learning);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+  font-size: 1.125rem;
+}
+
+.annotation-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--mirror-learning);
+  margin-bottom: 0.5rem;
+}
+
+.annotation-text {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--mirror-text);
+}
+
+.skill-tag {
+  display: inline-block;
+  background: var(--mirror-skill);
+  color: white;
+  padding: 0.375rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-right: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+/* Diagnosis Input */
+.diagnosis-section {
+  margin-top: 2rem;
+}
+
+.diagnosis-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--mirror-text);
+  margin-bottom: 1rem;
+}
+
+.diagnosis-input {
+  width: 100%;
+  min-height: 120px;
+  padding: 1rem;
+  border: 2px solid var(--mirror-accent);
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  fontFamily: 'inherit';
+  transition: border-color 0.2s ease;
+}
+
+.diagnosis-input:focus {
+  outline: none;
+  border-color: var(--mirror-primary);
+}
+
+.submit-diagnosis-button {
+  background: linear-gradient(135deg, var(--mirror-primary), var(--mirror-secondary));
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 0.75rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.125rem;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+/* Feedback Screen */
+.mirror-feedback-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+.feedback-hero {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.feedback-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--mirror-primary);
+  margin-bottom: 1rem;
+}
+
+.diagnosis-card {
+  background: var(--mirror-surface);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+}
+
+.learning-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.summary-card {
+  background: var(--mirror-surface);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.summary-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--mirror-primary);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.summary-item {
+  padding: 1rem;
+  background: var(--mirror-accent);
+  border-radius: 0.5rem;
+  margin-bottom: 0.75rem;
+  border-left: 3px solid var(--mirror-learning);
+}
+
+.brain-map {
+  background: var(--mirror-surface);
+  padding: 3rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.brain-map-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--mirror-primary);
+  margin-bottom: 2rem;
+}
+
+.skill-nodes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.skill-node {
+  background: linear-gradient(135deg, var(--mirror-skill), #a78bfa);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);
+}
+
+.exam-section {
+  background: var(--mirror-surface);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  margin-bottom: 2rem;
+}
+
+.exam-question-card {
+  background: var(--mirror-accent);
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.question-prompt {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.show-answer-button {
+  background: var(--mirror-primary);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.show-answer-button:hover {
+  background: var(--mirror-secondary);
+}
+
+.answer-box {
+  margin-top: 1rem;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 0.5rem;
+  border-left: 4px solid var(--mirror-learning);
+  line-height: 1.8;
+}
+
+.continue-learning-button {
+  background: linear-gradient(135deg, var(--mirror-primary), var(--mirror-secondary));
+  color: white;
+  padding: 1.25rem 3rem;
+  border-radius: 0.75rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.25rem;
+  width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .mirror-case-container {
+    flex-direction: column;
+  }
+  
+  .patient-pane, .learning-pane {
+    flex: none;
+    height: 50vh;
+  }
+  
+  .dual-pane-preview {
+    grid-template-columns: 1fr;
+  }
+  
+  .learning-summary-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .mirror-hero-title {
+    font-size: 2.5rem;
+  }
+}

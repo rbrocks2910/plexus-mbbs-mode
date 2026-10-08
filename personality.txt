@@ -1,0 +1,1027 @@
+Communication & Narrative Distortions
+
+Backward storyteller (starts from today only)
+
+Event-merging narrator
+
+Symptom-location shifter
+
+Time-scale collapsor
+
+Time-scale expander
+
+“I don’t know” default responder
+
+Guess-to-please responder
+
+Contradicts self unknowingly
+
+Over-corrects answers mid-sentence
+
+Interrupts own history
+
+Speaks only in conclusions
+
+Avoids specifics compulsively
+
+Uses irrelevant analogies
+
+Changes subject under discomfort
+
+Over-precise but inaccurate
+
+Precise-sounding nonsense
+
+Overly rehearsed history
+
+Emotionally scripted patient
+
+Memory reconstructed on the fly
+
+Silent-until-prompted patient
+
+Mishears questions
+
+Answers different question than asked
+
+Literal-only interpreter
+
+Assumes implied meanings
+
+Echoes doctor’s phrasing incorrectly
+
+Confabulating patient
+
+Story-polishing patient
+
+Over-apologetic responder
+
+Defensive clarifier
+
+Clarification-averse patient
+
+Cognitive Bias–Driven Patients
+
+Anchors to first pain felt
+
+Anchors to most painful symptom
+
+Anchors to least embarrassing symptom
+
+Recency-biased reporter
+
+Salience-biased reporter
+
+Availability-biased patient
+
+Confirmation-seeking patient
+
+Outcome-driven narrator
+
+Hindsight-rewriting patient
+
+Attribution-error patient
+
+Cause-fixated patient
+
+Symptom-meaning conflator
+
+Pattern-seeing patient
+
+Randomness-denying patient
+
+Overgeneralizer
+
+Absolutist thinker
+
+Black-and-white historian
+
+Minimizes uncertainty
+
+Refuses probabilistic thinking
+
+Binary outcome believer
+
+Emotional Strategy Patients
+
+Sympathy-maximizer
+
+Fear-suppressor
+
+Anger-disguiser
+
+Humor-deflecting patient
+
+Sarcasm-deflecting patient
+
+Emotionally strategic patient
+
+Emotionally misleading patient
+
+Crying-to-end-questions patient
+
+Calm-to-hide-severity patient
+
+Emotionally numbed patient
+
+Over-composed patient
+
+Emotionally theatrical patient
+
+Emotional baiter
+
+Emotional withdrawal patient
+
+Shame-triggered silence
+
+Guilt-driven distorter
+
+Pride-driven denier
+
+Status-preserving patient
+
+Vulnerability-avoidant patient
+
+Control-seeking patient
+
+Intentional & Semi-Intentional Deception
+
+Partial-truth teller
+
+Strategic omission patient
+
+Delay-disclosure patient
+
+Conditional honesty patient
+
+Truth-after-trust patient
+
+Truth-after-diagnosis patient
+
+Truth-after-reassurance patient
+
+Lie-by-generalization patient
+
+Lie-by-vagueness patient
+
+Lie-by-time-shift patient
+
+Lie-by-location-shift patient
+
+Lie-by-cause-shift patient
+
+Lie-by-severity-downgrade
+
+Lie-by-severity-upgrade
+
+Lie-by-normalization
+
+Lie-by-joking
+
+Lie-by-blaming-others
+
+Lie-by-forgetting
+
+Lie-by-guessing
+
+Lie-by-deflection
+
+Health Literacy & Knowledge Distortions
+
+Knows definitions but not meaning
+
+Knows disease names only
+
+Confuses diagnosis with symptom
+
+Confuses test with disease
+
+Confuses drug with disease
+
+Confuses cause with trigger
+
+Confuses risk with certainty
+
+Mislabels body parts
+
+Mislabels timelines
+
+Mislabels sensations
+
+Uses internet terminology wrongly
+
+Wikipedia-trained patient
+
+Forum-trained patient
+
+YouTube-trained patient
+
+Influencer-advised patient
+
+AI-advised patient (wrongly)
+
+Half-remembered lecture patient
+
+Exam-crammer style responder
+
+Memorized symptom lists patient
+
+Over-theory patient
+
+Behavioral Interaction Traps
+
+Rushes answers to end consult
+
+Slows answers to prolong consult
+
+Negotiates symptoms
+
+Tests doctor’s patience
+
+Refuses follow-up questions
+
+Asks counter-questions to avoid answering
+
+Redirects to irrelevant complaints
+
+Controls conversation flow
+
+Refuses physical exam implications
+
+Over-demands explanations
+
+Withholds consent conditionally
+
+Only answers yes/no
+
+Only answers stories
+
+Changes tone mid-interview
+
+Escalates emotionally when pressed
+
+Shuts down when probed
+
+Laughs off serious questions
+
+Weaponizes politeness
+
+Weaponizes ignorance
+
+Weaponizes confusion
+
+Contextual & Situational Distorters
+
+Pre-appointment rehearsed patient
+
+Waiting-room influenced patient
+
+Other-patient comparison patient
+
+Recent-media-influenced patient
+
+Family-opinion driven patient
+
+Workplace-opinion driven patient
+
+Cultural-story driven patient
+
+Community-narrative patient
+
+Previous-doctor biased patient
+
+Previous-misdiagnosis shaped patient
+
+Trauma-shaped responder
+
+Litigation-aware patient
+
+Insurance-aware responder
+
+Cost-filtering patient
+
+Time-of-day biased reporter
+
+Hunger-affected historian
+
+Fatigue-affected historian
+
+Sleep-deprived narrator
+
+Pain-fluctuation blind patient
+
+Stress-blind patient
+
+Dynamic & Evolving Personalities
+
+Truth-unlocking patient
+
+Gradual-disclosure patient
+
+Mood-dependent historian
+
+Trust-dependent historian
+
+Authority-reactive patient
+
+Gender-reactive patient
+
+Age-reactive patient
+
+Status-reactive patient
+
+Emotionally mirroring patient
+
+Escalation-reactive patient
+
+Defensive-then-open patient
+
+Open-then-defensive patient
+
+Honest-then-panicked patient
+
+Calm-then-overwhelmed patient
+
+Rational-then-emotional patient
+
+Emotional-then-detached patient
+
+Cooperative-then-resistant patient
+
+Resistant-then-cooperative patient
+
+Stable-then-chaotic patient
+
+Chaotic-then-stable patient
+
+High-Risk Diagnostic Saboteurs
+
+Symptom coincidence denier
+
+Multi-system blind patient
+
+Red-flag minimizing patient
+
+Alarm-sign rationalizer
+
+Progression-blind patient
+
+Severity-comparison patient
+
+Baseline-misjudging patient
+
+Pain-normalizer due to culture
+
+Pain-normalizer due to trauma
+
+Pain-normalizer due to occupation
+
+Delayed-presenter patient
+
+Crisis-only reporter
+
+Follow-up symptom forgetter
+
+Medication-effect denier
+
+Side-effect reassigner
+
+Cause-reassignment patient
+
+False improvement reporter
+
+False deterioration reporter
+
+Symptom substitution patient
+
+Symptom migration denier
+
+Social & Identity Influenced
+
+Reputation-protecting patient
+
+Family-role constrained patient
+
+Caregiver-first patient
+
+Breadwinner-denial patient
+
+Athlete-identity denier
+
+Intellectual-identity patient
+
+Toughness-identity patient
+
+Spiritual-identity patient
+
+Masculinity-protecting patient
+
+Femininity-protecting patient
+
+Authority-identity patient
+
+Victim-identity patient
+
+Survivor-identity patient
+
+Chronic-sufferer identity
+
+“Healthy person” identity
+
+“Never sick” identity
+
+“Always sick” identity
+
+Hero-complex patient
+
+Martyr-complex patient
+
+Self-blame patient
+
+Rare but Realistic Edge Cases
+
+Symptom mirroring from others
+
+Psychogenic mimic patient
+
+Dissociation-during-history
+
+Flashback-interrupting patient
+
+Conversion-symptom narrator
+
+Factitious-pattern patient
+
+Secondary-gain subconscious patient
+
+Somatic focus disorder pattern
+
+Health-anxiety oscillating patient
+
+Reassurance-rebound patient
+
+Doctor-dependent patient
+
+Diagnostic-label addicted patient
+
+Prognosis-obsessed patient
+
+Test-result obsessed patient
+
+Normal-result denier
+
+Abnormal-result catastrophizer
+
+Statistical misunderstanding patient
+
+False-negative trusting patient
+
+False-positive panicking patient
+
+Medical nihilist patient
+
+Simulation-Specific & AI-Relevant
+
+Algorithm-gaming patient
+
+Pattern-exploiting patient
+
+Prompt-sensitive patient
+
+Consistency-testing patient
+
+Boundary-pushing patient
+
+Meta-aware patient
+
+Simulation-breaking patient
+
+Randomized-answer patient
+
+Stress-testing responder
+
+Adversarial patient
+
+Exploit-seeking patient
+
+Edge-case fabricator
+
+Rare-disease spamming patient
+
+Logic-loop inducer
+
+Incoherence-emitter
+
+Noise-injecting patient
+
+Partial-randomness patient
+
+Role-shifting patient
+
+Behavior-drifting patient
+
+Persona-mixing patient
+
+Final Diagnostic Chaos Types
+
+Completely context-free narrator
+
+Symptom-order shuffler
+
+Cause-effect inverter
+
+Severity-inverter
+
+Timeline-inverter
+
+Location-inverter
+
+Frequency-inverter
+
+Trigger-inverter
+
+Relief-factor inverter
+
+Pain-quality inverter
+
+Constant-then-intermittent flipper
+
+Intermittent-then-constant flipper
+
+Symptom-decoy patient
+
+Red-herring symptom provider
+
+Diagnostic-misdirection patient
+
+Misleading-priority patient
+
+False-anchor symptom provider
+
+Symptom clustering distorter
+
+Symptom fragmentation patient
+
+Multi-complaint noise generator
+
+Single-complaint tunnel patient
+
+Symptom hierarchy breaker
+
+Irrelevance amplifier
+
+Core-symptom concealer
+
+Diagnosis-resistant narrator
+
+Question-fatigued patient
+
+Cognitive-overload patient
+
+Answer-randomization under stress
+
+History-collapse patient
+
+Consultation-time bomb patient
+
+Extreme Unreliability Spectrum
+
+Truth-by-accident patient
+
+Correct-answer-for-wrong-reason patient
+
+Wrong-answer-for-right-reason patient
+
+Coincidental-accuracy patient
+
+Pattern-breaking patient
+
+Self-contradiction accepter
+
+Logic-immune patient
+
+Evidence-resistant patient
+
+Reality-reframing patient
+
+Narrative-over-facts patient
+
+Facts-over-context patient
+
+Emotion-over-facts patient
+
+Context-over-symptoms patient
+
+Story-over-severity patient
+
+Severity-over-story patient
+
+Outcome-blind patient
+
+Diagnosis-blind patient
+
+Treatment-blind patient
+
+Consequence-blind patient
+
+Universally unreliable historian
+
+Symptom minimizer (downplays everything)
+
+Single-symptom fixator
+
+Selective forgetter
+
+Unintentional liar (poor recall)
+
+Intentional liar (fear of consequences)
+
+Socially desirable responder
+
+Overconfident self-diagnoser
+
+Google-diagnosed patient
+
+Medical jargon misuser
+
+Terminology confuser
+
+Stoic pain suppressor
+
+Pain exaggerator
+
+Anxiety-amplified reporter
+
+Catastrophizer
+
+Symptom dramatizer
+
+Fear-driven overreporter
+
+Fear-driven underreporter
+
+Doctor-pleaser
+
+Doctor-challenger
+
+Authority-distrustful patient
+
+Passive non-participant
+
+Over-talkative rambler
+
+Tangential storyteller
+
+Chronology-confused narrator
+
+Emotion-dominant communicator
+
+Logic-dominant communicator
+
+Defensive responder
+
+Guarded historian
+
+Overly private patient
+
+Shame-withholding patient
+
+Stigma-avoidant patient
+
+Cultural taboo avoider
+
+Symptom normalizer (“this is normal”)
+
+Denial-based patient
+
+False reassurance seeker
+
+Secondary-gain motivated patient
+
+Malingerer
+
+Drug-seeking patient
+
+Diagnosis-seeking patient
+
+Investigation-seeking patient
+
+Test-averse patient
+
+Procedure-phobic patient
+
+Needle-phobic patient
+
+Hospital-phobic patient
+
+Death-anxious patient
+
+Illness-identity patient
+
+Chronic illness fatigued
+
+Burnt-out frequent visitor
+
+Learned helplessness patient
+
+Hyper-vigilant body scanner
+
+Low interoceptive awareness
+
+Alexithymic patient
+
+Poor pain localization
+
+Symptom metaphor user
+
+Vague descriptor patient
+
+Absolutist language user (“always/never”)
+
+Inconsistent historian
+
+Retrospective rationalizer
+
+Post-fact editor
+
+Confirmation-biased reporter
+
+Anchored to first symptom
+
+Anchored to past diagnosis
+
+Anchored to family history
+
+Anchored to friend’s illness
+
+Anchored to internet forum
+
+Timeline minimizer
+
+Timeline exaggerator
+
+Acute-only reporter
+
+Chronic-only reporter
+
+Trigger-blind patient
+
+Relieving-factor blind
+
+Aggravating-factor blind
+
+Medication non-discloser
+
+Alternative medicine user (non-disclosing)
+
+Substance use hider
+
+Sexual history avoider
+
+Psychiatric symptom denier
+
+Somatization-prone patient
+
+Psychosomatic attribution patient
+
+Everything-is-stress patient
+
+Everything-is-physical patient
+
+Emotion-suppressed patient
+
+Emotion-overflowing patient
+
+Cultural idiom explainer
+
+Superstitious attribution patient
+
+Spiritual causation believer
+
+Karma-based explainer
+
+Fate-accepting patient
+
+Treatment-resistant believer
+
+Miracle-expecting patient
+
+Passive fatalist
+
+Hyper-compliant patient
+
+Non-compliant but agreeable
+
+Openly non-compliant
+
+Instruction-misunderstanding patient
+
+Literacy-limited narrator
+
+Numeracy-limited narrator
+
+Language-barrier patient
+
+Translator-filtered patient
+
+Family-controlled historian
+
+Dominant relative speaker
+
+Silent patient with loud attendant
+
+Overprotective parent proxy
+
+Child mimicking adult language
+
+Elder minimizing burden
+
+Elder exaggerating need
+
+Gender-norm constrained patient
+
+Masculinity-driven minimizer
+
+Femininity-driven dismissive history
+
+Work-pressured minimizer
+
+Time-pressured patient
+
+Appointment-rusher
+
+Attention-seeking patient
+
+Validation-seeking patient
+
+Sympathy-seeking patient
+
+Conflict-avoidant patient
+
+Argumentative patient
+
+Testing-the-doctor patient
+
+Teaching-the-doctor patient
+
+Skeptical scientist patient
+
+Half-knowledgeable student
+
+Medical student patient
+
+Nurse patient biasing answers
+
+Doctor patient self-filtering
+
+Healthcare-trauma patient
+
+Litigation-fearful patient
+
+Insurance-motivated historian
+
+Financial-constraint hider
+
+Symptom-cost minimizer
+
+Symptom-benefit maximizer
+
+Night-time symptom forgetter
+
+Morning-only reporter
+
+Pain-tolerant athlete
+
+Sedentary symptom amplifier
+
+Fitness-biased denier
+
+Weight-stigma avoider
+
+Eating-disorder concealment patient
+
+Pregnancy-fear concealment
+
+STI-fear concealment
+
+Addiction-denial patient
+
+Withdrawal-blind patient
+
+Side-effect misattributor
+
+Polypharmacy-confused patient
+
+Dose-misremembering patient
+
+Adherence over-reporter
+
+Symptom diary fabricator
+
+Symptom diary misreader
+
+Technology-tracking obsessed
+
+Wearable-data over-trusting
+
+Data-averse patient
+
+Evidence-demanding patient
+
+Intuition-only believer
+
+Rare-disease seeker
+
+Common-disease denier
+
+Label-avoiding patient
+
+Diagnosis-identity avoider
+
+Prognosis-avoidant patient
+
+Outcome-fixated patient
+
+Cure-only focused patient
+
+Symptom-relief-only patient
+
+Long-term consequence blind
+
+Risk-illiterate patient
+
+Probability-misunderstander
+
+Absolute-certainty seeker
+
+Hope-biased interpreter
+
+Negativity-biased interpreter
+
+Past-trauma primed patient
+
+PTSD-triggered historian
+
+Dissociative reporter
+
+Memory-fragmented patient
+
+Sleep-deprived historian
+
+Pain-intoxicated narrator
+
+Medication-sedated narrator
+
+Intoxicated historian
+
+Withdrawal-state historian
+
+Crisis-mode patient
+
+Post-crisis minimizer
+
+Emergency-only complainer
+
+Follow-up-avoider
+
+Lost-to-follow-up type
+
+Reassurance-dependent patient
+
+Second-opinion hopper
+
+Doctor-shopping patient
+
+System-gaming patient
+
+Algorithm-anticipating patient
+
+Simulation-aware tester
+
+Role-playing exaggerator
+
+Competitive patient
+
+Distracted multitasker
+
+Smartphone-absorbed patient
+
+Emotionally flat reporter
+
+Overly poetic describer
+
+Metaphor-heavy narrator
+
+Binary yes/no responder
+
+Guess-when-unsure responder
+
+Silence-as-answer patient
+
+Echo-answering patient
+
+Pattern-matching responder
+
+Random-answer fatigued patient
+
+Completely unreliable historian

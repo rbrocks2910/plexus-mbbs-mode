@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Plexus: Medical Training Simulator</title>
+
+    <!-- Favicon using your custom icon -->
+    <link rel="icon" type="image/png" href="/plexusicon.png">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    <!-- Web App Meta Tags for iOS and Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Plexus">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="theme-color" content="#1A3C5A">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- iOS Safari PWA settings -->
+    <link rel="apple-touch-icon" href="/logo192.png">
+
+    <!-- Android PWA settings -->
+    <link rel="manifest" href="/manifest.json">
+
+    <!-- Early Error Catching Script -->
+    <script>
+      window.addEventListener('error', function(e) {
+        console.error('Page Error:', e);
+        var b = document.getElementById('debug-error-banner');
+        if (!b) {
+          b = document.createElement('div');
+          b.id = 'debug-error-banner';
+          b.style = 'position:fixed;top:0;left:0;right:0;background:#dc2626;color:white;padding:16px;z-index:9999999;font-family:monospace;font-size:14px;white-space:pre-wrap;box-shadow:0 4px 6px rgba(0,0,0,0.3);';
+          document.body ? document.body.appendChild(b) : document.documentElement.appendChild(b);
+        }
+        b.textContent += (e.message || e.error || 'Unknown Script Error') + '\nSource: ' + (e.filename || '') + ':' + (e.lineno || '') + '\n';
+      });
+      window.addEventListener('unhandledrejection', function(e) {
+        console.error('Unhandled Rejection:', e);
+        var b = document.getElementById('debug-error-banner');
+        if (!b) {
+          b = document.createElement('div');
+          b.id = 'debug-error-banner';
+          b.style = 'position:fixed;top:0;left:0;right:0;background:#dc2626;color:white;padding:16px;z-index:9999999;font-family:monospace;font-size:14px;white-space:pre-wrap;box-shadow:0 4px 6px rgba(0,0,0,0.3);';
+          document.body ? document.body.appendChild(b) : document.documentElement.appendChild(b);
+        }
+        b.textContent += 'Unhandled Promise Rejection: ' + (e.reason ? (e.reason.message || e.reason) : 'Unknown') + '\n';
+      });
+    </script>
+    
+    <!-- Google Fonts Import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Inter', sans-serif;
+        background: #1A3C5A;
+        color: #ffffff;
+      }
+      #root {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+      @keyframes spin {
+        to { transform: rotate(360deg); }
+      }
+    </style>
+</head>
+  <body class="bg-[#1A3C5A] text-white">
+    <div id="root">
+      <div style="display:flex;min-height:100vh;width:100%;align-items:center;justify-content:center;background:linear-gradient(135deg, #1A3C5A 0%, #122B40 100%);color:#ffffff;font-family:'Inter',system-ui,sans-serif;">
+        <div style="text-align:center;padding:24px;">
+          <div style="width:48px;height:48px;border:4px solid rgba(255,255,255,0.2);border-top-color:#4A90E2;border-radius:50%;animation:spin 0.8s linear infinite;margin:0 auto 20px;"></div>
+          <h1 style="font-size:24px;font-weight:700;margin:0 0 8px;letter-spacing:-0.5px;">PLEXUS MBBS</h1>
+          <p style="font-size:14px;color:rgba(255,255,255,0.7);margin:0;">Launching clinical simulation platform...</p>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
