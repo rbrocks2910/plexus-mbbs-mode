@@ -60,7 +60,7 @@ export const PrescriptionModal: React.FC<PrescriptionModalProps> = ({
                 <select 
                   value={selectedDrug} 
                   onChange={(e) => setSelectedDrug(e.target.value)}
-                  className="w-full p-2.5 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-plexus-accent focus:border-transparent outline-none transition-all"
+                  className="w-full p-2.5 bg-white text-gray-900 border border-gray-300 rounded-lg focus:ring-2 focus:ring-plexus-accent focus:border-transparent outline-none transition-all"
                 >
                   {DRUG_OPTIONS.map(drug => <option key={drug} value={drug}>{drug}</option>)}
                 </select>
@@ -70,7 +70,7 @@ export const PrescriptionModal: React.FC<PrescriptionModalProps> = ({
                 <select 
                   value={dosageForm} 
                   onChange={(e) => setDosageForm(e.target.value)}
-                  className="w-full p-2.5 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-plexus-accent focus:border-transparent outline-none transition-all"
+                  className="w-full p-2.5 bg-white text-gray-900 border border-gray-300 rounded-lg focus:ring-2 focus:ring-plexus-accent focus:border-transparent outline-none transition-all"
                 >
                   {DOSAGE_FORMS.map(form => <option key={form} value={form}>{form}</option>)}
                 </select>
@@ -82,7 +82,7 @@ export const PrescriptionModal: React.FC<PrescriptionModalProps> = ({
                   value={quantity} 
                   onChange={(e) => setQuantity(e.target.value)}
                   placeholder="e.g., 500mg" 
-                  className="w-full p-2.5 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-plexus-accent focus:border-transparent outline-none transition-all"
+                  className="w-full p-2.5 bg-white text-gray-900 placeholder:text-gray-400 border border-gray-300 rounded-lg focus:ring-2 focus:ring-plexus-accent focus:border-transparent outline-none transition-all"
                 />
               </div>
               <div>

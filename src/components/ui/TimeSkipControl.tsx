@@ -43,12 +43,12 @@ export const TimeSkipControl: React.FC<TimeSkipControlProps> = ({ onSkip, isLoad
                   min="1" 
                   value={value} 
                   onChange={(e) => setValue(Math.max(1, parseInt(e.target.value) || 1))}
-                  className="w-20 p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 outline-none"
+                  className="w-20 p-2 bg-white text-gray-900 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 outline-none"
                 />
                 <select 
                   value={unit} 
                   onChange={(e) => setUnit(e.target.value as any)}
-                  className="flex-grow p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 outline-none"
+                  className="flex-grow p-2 bg-white text-gray-900 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 outline-none"
                 >
                   <option value="minutes">Minutes</option>
                   <option value="hours">Hours</option>

@@ -37,6 +37,19 @@
   box-shadow: 0 0 20px var(--mode-glow);
 }
 
+/* Global input & form controls: force high-contrast dark text and clean placeholder */
+input:not([type="checkbox"]):not([type="radio"]):not([type="range"]),
+textarea,
+select {
+  color: #111827 !important; /* Tailwind gray-900 */
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #9ca3af !important; /* Tailwind gray-400 */
+  opacity: 1;
+}
+
 /* Custom scrollbar for answers and long text */
 .custom-scrollbar::-webkit-scrollbar {
   width: 6px;

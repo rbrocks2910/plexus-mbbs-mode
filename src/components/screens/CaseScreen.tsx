@@ -666,7 +666,7 @@ export const CaseScreen: React.FC = () => {
                   onChange={(e) => setUserInput(e.target.value)} 
                   onKeyPress={(e) => e.key === 'Enter' && handleSendMessage()} 
                   placeholder={userInput.startsWith('/act ') ? "Describe your physical action (e.g. Palpate the abdomen)..." : `Ask the ${getInterlocutorRole().toLowerCase()} a question...`}
-                  className={`flex-grow p-3 bg-white border rounded-lg focus:ring-2 transition-all ${
+                  className={`flex-grow p-3 bg-white text-gray-900 placeholder:text-gray-400 border rounded-lg focus:ring-2 transition-all ${
                     userInput.startsWith('/act ') 
                     ? 'border-blue-500 ring-blue-200 bg-blue-50/30' 
                     : 'border-gray-300 focus:ring-plexus-accent focus:border-plexus-accent'
@@ -858,7 +858,7 @@ export const CaseScreen: React.FC = () => {
                         )}
                     </div>
                      <div className="pt-4 mt-auto border-t border-gray-200 flex gap-2">
-                        <input type="text" value={ddxInput} onChange={e => setDdxInput(e.target.value)} onKeyPress={e => e.key === 'Enter' && handleAddDdx()} placeholder="Add to list..." className="flex-grow p-2 border border-gray-300 rounded-md focus:ring-1 focus:ring-plexus-accent"/>
+                        <input type="text" value={ddxInput} onChange={e => setDdxInput(e.target.value)} onKeyPress={e => e.key === 'Enter' && handleAddDdx()} placeholder="Add to list..." className="flex-grow p-2 bg-white text-gray-900 placeholder:text-gray-400 border border-gray-300 rounded-md focus:ring-1 focus:ring-plexus-accent"/>
                         <button onClick={handleAddDdx} className="bg-plexus-blue text-white font-semibold px-4 py-2 rounded-md hover:bg-plexus-blue-dark">Add</button>
                     </div>
                   </div>
@@ -887,7 +887,7 @@ export const CaseScreen: React.FC = () => {
                         <div className="pt-4 mt-2 border-t border-gray-200">
                              <h3 className="font-semibold text-gray-600 text-sm mb-2 px-2">Order Custom Test</h3>
                              <div className="flex gap-2">
-                                <input type="text" value={customTestName} onChange={e => setCustomTestName(e.target.value)} onKeyPress={e => e.key === 'Enter' && handleRequestCustomTest()} placeholder="e.g., 'Serum Ferritin'" className="flex-grow p-2 border border-gray-300 rounded-md focus:ring-1 focus:ring-plexus-accent"/>
+                                <input type="text" value={customTestName} onChange={e => setCustomTestName(e.target.value)} onKeyPress={e => e.key === 'Enter' && handleRequestCustomTest()} placeholder="e.g., 'Serum Ferritin'" className="flex-grow p-2 bg-white text-gray-900 placeholder:text-gray-400 border border-gray-300 rounded-md focus:ring-1 focus:ring-plexus-accent"/>
                                 <button onClick={handleRequestCustomTest} className="bg-plexus-blue text-white font-semibold px-4 py-2 rounded-md hover:bg-plexus-blue-dark">Order</button>
                             </div>
                         </div>
@@ -932,7 +932,7 @@ export const CaseScreen: React.FC = () => {
                 <h2 className="text-2xl font-bold text-plexus-blue mb-4">Final Diagnosis</h2>
                 <p className="text-gray-600 mb-6">Enter your final diagnosis and confidence level.</p>
                 {/* Text input for the diagnosis. */}
-                <input type="text" value={finalDiagnosis} onChange={e => setFinalDiagnosis(e.target.value)} placeholder="Enter final diagnosis..." className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-plexus-accent mb-4"/>
+                <input type="text" value={finalDiagnosis} onChange={e => setFinalDiagnosis(e.target.value)} placeholder="Enter final diagnosis..." className="w-full p-3 bg-white text-gray-900 placeholder:text-gray-400 border border-gray-300 rounded-lg focus:ring-2 focus:ring-plexus-accent mb-4"/>
                 {/* Slider for confidence level. */}
                 <label className="block text-gray-700 font-medium mb-2">Confidence: {confidence}%</label>
                 <input type="range" min="0" max="100" step="5" value={confidence} onChange={e => setConfidence(Number(e.target.value))} className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer" />
